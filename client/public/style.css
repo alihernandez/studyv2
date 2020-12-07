@@ -1,0 +1,6 @@
+body,
+#root {
+  background-image: url("/img/background.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}

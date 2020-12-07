@@ -1,0 +1,4 @@
+node_modules
+client/debug.log
+.env
+package-lock.json

@@ -1,0 +1,339 @@
+/* Newsfeed Cards */
+
+.card {
+  margin: 10px;
+  padding: 3px;
+  -webkit-box-shadow: 0px 0px 6px 4px #a1c4fd;
+  box-shadow: 0px 0px 6px 4px #b5cbd6;
+  cursor: pointer;
+  background-color: #d8e3e9;
+  border-radius: 25px;
+}
+
+@media (max-width: 600px) <style> .card {
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .card {
+    width: 90% !important;
+    border-radius: 8px !important;
+    margin: 15px 0px 0px 38px !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .card {
+    width: 90% !important;
+    border-radius: 8px !important;
+    margin: 15px 0px 0px 38px !important;
+  }
+}
+
+.footer-background {
+  background-color: #cadfe5;
+}
+
+.Date {
+  margin: 5px;
+  text-align: center;
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 15px 15px 4px rgba(0, 0, 0, 0.06);
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+.Note {
+  text-align: center;
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 15px 15px 4px rgba(0, 0, 0, 0.06);
+  font-family: "Baloo Paaji 2", cursive;
+}
+.Location {
+  text-align: center;
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 15px 15px 4px rgba(0, 0, 0, 0.06);
+  font-family: "Baloo Paaji 2", cursive;
+}
+.card-header {
+  margin: 0 auto !important;
+}
+/* Profile Image */
+
+.card__image {
+  display: block;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 4px solid #77a2d2;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 50px rgba(122, 203, 202, 0.75);
+}
+
+.card__name {
+  margin-top: 15px;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+.type,
+.value {
+  text-align: center;
+}
+
+.value {
+  font-weight: 500px;
+  font-size: 1.5rem;
+  color: #3f4866;
+}
+.type {
+  font-family: "Baloo Paaji 2", cursive;
+}
+.card-text {
+  grid-area: text;
+  text-align: center;
+  margin: 10px;
+}
+.card-text .p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+  color: black;
+}
+/* Card Social Icons */
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+  text-align: center;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.95em;
+  left: 0.96em;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #77a1d3, #79cbca, #77a1d3);
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #3f4866;
+  background: -webkit-linear-gradient(45deg, #77a1d3, #79cbca, #77a1d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+.float-right {
+  color: #000;
+}
+
+.btn-secondary a {
+  color: #fff !important;
+}
+
+.btn-secondary {
+  background-image: linear-gradient(
+    to right,
+    #77a1d3 0%,
+    #79cbca 51%,
+    #77a1d3 100%
+  );
+}
+.btn-secondary {
+  margin: 15px;
+  margin-left: 45px;
+  padding: 10px 100px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.Connect-Button.btn-secondary {
+  margin-left: 0px;
+}
+
+.btn-secondary:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+input#inputSubject.form-control,
+input#inputNotes.form-control,
+input#inputLocation.form-control {
+  border: 3px solid;
+  border-image-source: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  border-image-slice: 1;
+  border-radius: 5px;
+}
+
+select#exampleSelect.form-control {
+  border: 3px solid;
+  border-image-source: linear-gradient(
+    to right,
+    #74ebd5 0%,
+    #9face6 100%
+  ) !important;
+  border-image-slice: 1;
+  border-radius: 5px;
+}
+
+#loginSection {
+  margin-left: 200px;
+}
+
+/* Signup Page */
+
+input#firstname.form-control,
+input#lastname.form-control,
+input#email.form-control,
+input#username.form-control,
+input#password.form-control,
+input#confirmPassword.form-control {
+  border: 3px solid;
+  border-image-source: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+
+  border-image-slice: 1;
+  border-radius: 5px;
+}
+
+.btn-danger {
+  border: 3px solid;
+  border-image-source: linear-gradient(
+    to right,
+    #74ebd5 0%,
+    #9face6 100%
+  ) !important;
+  border-image-slice: 1;
+  border-radius: 5px;
+}
+
+.btn-danger {
+  background-image: linear-gradient(
+    to right,
+    #77a1d3 0%,
+    #79cbca 51%,
+    #77a1d3 100%
+  );
+}
+
+.delete_button {
+  padding-top: 5px;
+  position: relateive;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  #loginSection {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+#bodyHeight {
+  max-height: 100%;
+  height: 780px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 0.8em !important;
+  }
+}
+
+/* LoginSection */
+.Login {
+  text-align: center;
+  margin-left: 150px;
+  color: #3f4866;
+  font-family: "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+  padding-top: 100px;
+}
+
+.TypographyHeader {
+  color: #3f4866;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 46px;
+  font-weight: 100;
+  line-height: 50px;
+  letter-spacing: 1px;
+  padding: 0 0 40px;
+  border-bottom: double #555;
+}
+#TypographyPara {
+  color: #000;
+  font-family: "Verdana", sans-serif;
+  font-size: 1.15em;
+  line-height: 26px;
+  /* text-indent: 30px; */
+  margin: 0;
+}
+
+.LoginParagraph {
+  color: #6153cc;
+  background: none;
+  text-decoration: none;
+}
+
+.LoginParagraph:hover {
+  color: #3f4866;
+  border-bottom: 1px solid #3f4866;
+}
