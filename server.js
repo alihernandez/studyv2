@@ -25,7 +25,7 @@ app.use(logger('dev'));
 app.use(flash());
 
 //Serves static files in Express.
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 //Keeps trrack of user session.
 app.use(
