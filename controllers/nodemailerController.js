@@ -1,5 +1,5 @@
 let nodemailer = require("nodemailer");
-const { addListener } = require("nodemon");
+// const { addListener } = require("nodemon");
 require("dotenv").config();
 const jwt = require('jsonwebtoken');
 
