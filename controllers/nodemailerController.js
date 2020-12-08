@@ -14,6 +14,7 @@ module.exports = {
       port: 587,
       auth: {
         user: process.env.REACT_APP_USER,
+        //moved to heroku
         pass: process.env.REACT_APP_PASS,
       },
     });
